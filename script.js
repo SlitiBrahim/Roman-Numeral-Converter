@@ -21,9 +21,9 @@ function convertToRoman(num) {
   let pos;
 
   for (let i = 0; i < num.length; i++) {
-    console.log("i: " + i);
+    // console.log("i: " + i);
     pos = num.length - 1 - i;
-    console.log("pos: " + pos);
+    // console.log("pos: " + pos);
     tmp.push(romanNumbers[pos][Number(num[i])-1]);
   }
 
@@ -36,12 +36,12 @@ function convertToRoman(num) {
     // 4: i = XL -> [1][3]
     // 9: i = IX -> [0][8]
 
-  console.log(tmp);
+  num = tmp.join("");
 
  return num;
 }
 
-console.log(convertToRoman(36)); // XXXVI
+console.log(convertToRoman(5)); // XXXVI
 
 // 501 -> DI
 // 649 -> DCXLIX
