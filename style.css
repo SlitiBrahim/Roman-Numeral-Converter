@@ -7,7 +7,7 @@ html, body {
   width: 100%;
 }
 
-#background-image {
+body {
   background-image: url('background.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -20,13 +20,34 @@ html, body {
   height: 100vh;
 }
 
+.container {
+  position: relative;
+}
+
 nav {
   font-family: Quattrocento, sans-serif;
   background-color: #FFFFFF;
-  position: fixed;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
+#input {
+  position: absolute;
+  font-size: 1.2em;
+  border: none;
+  top: 20px;
+  left: 315px;
+  width: 300px;
+  color: #7c7c7c;
+  outline: none;
+}
+
+#id {
+  margin-left: 60px;
+  position: absolute;
+}
+
 nav h1 {
-  margin-left: 50px;
+  margin-left: 1vw;
 }

@@ -30,4 +30,12 @@ function convertToRoman(num) {
  return num;
 }
 
-console.log(convertToRoman(5));
+function displayConversion(input) {
+  console.log(convertToRoman(Number(input.value)));
+}
+
+let input = document.querySelector("#input");
+
+input.addEventListener("keyup", displayConversion.bind(null, input));
+
+// console.log(convertToRoman(5));
