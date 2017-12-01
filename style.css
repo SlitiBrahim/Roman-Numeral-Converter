@@ -51,3 +51,11 @@ nav {
 nav h1 {
   margin-left: 1vw;
 }
+
+#result {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  font-size: 8em;
+  font-family: Quattrocento, sans-serif;
+}

@@ -31,7 +31,8 @@ function convertToRoman(num) {
 }
 
 function displayConversion(input) {
-  console.log(convertToRoman(Number(input.value)));
+  let resultField = document.querySelector("#result>p");
+  resultField.textContent = convertToRoman(Number(input.value));
 }
 
 let input = document.querySelector("#input");
